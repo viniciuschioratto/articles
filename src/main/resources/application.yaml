@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: articles
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+logging:
+  level:
+    web: INFO
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+logging:
+  level:
+    web: DEBUG
